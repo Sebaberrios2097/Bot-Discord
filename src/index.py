@@ -6,6 +6,7 @@ import urllib.parse, urllib.request, re
 from pytube import YouTube
 import asyncio
 import sqlite3
+import config
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -158,4 +159,4 @@ async def ping(ctx):
 
 
 
-bot.run("ODg0NjYyMDc1Mjc0NzAyODc4.G0yBOt.NDwzvuHQEHmGOzCTWoNYzH7-IcgXvN3HHampYc")
+bot.run(config.TOKEN)
